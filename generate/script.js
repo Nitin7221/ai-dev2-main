@@ -1,21 +1,23 @@
-// Grab the input element and buttons by their IDs
-const dynamicInput = document.getElementById('dynamic-input');
-const titleBtn = document.getElementById('title-btn');
-const articleBtn = document.getElementById('article-btn');
-const chatBtn = document.getElementById('chat-btn');
+function changeContent(contentType) {
+  // Remove active class from all buttons and content
+  document.querySelectorAll(".nav-button").forEach((btn) => {
+    btn.classList.remove("active");
+  });
+  document.querySelectorAll(".content-section").forEach((section) => {
+    section.classList.remove("active");
+  });
 
-// Add click event listeners to update the placeholder text
-titleBtn.addEventListener('click', () => {
-  dynamicInput.placeholder = 'Enter your title request...';
-});
+  // Add active class to clicked button and corresponding content
+  const activeButton = document.querySelector(
+    `[data-content="${contentType}"]`
+  );
+  const activeContent = document.getElementById(`${contentType}-content`);
 
-articleBtn.addEventListener('click', () => {
-  dynamicInput.placeholder = 'Enter article topic...';
-});
-
-chatBtn.addEventListener('click', () => {
-  dynamicInput.placeholder = 'Enter your chat message...';
-});
+  if (activeButton && activeContent) {
+    activeButton.classList.add("active");
+    activeContent.classList.add("active");
+  }
+}
 
 // Load navbar
 fetch("../navbar/navbar.html")
