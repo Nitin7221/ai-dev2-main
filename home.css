@@ -43,9 +43,9 @@ body {
   gap: 1rem;
 }
 
-.scroller__inner img{
-    height: 200px;
-    width: auto;
+.scroller__inner img {
+  height: 200px;
+  width: auto;
 }
 
 .scroller[data-animated="true"] {

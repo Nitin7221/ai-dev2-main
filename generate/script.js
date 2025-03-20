@@ -1,5 +1,4 @@
 function changeContent(contentType) {
-  // Remove active class from all buttons and content
   document.querySelectorAll(".nav-button").forEach((btn) => {
     btn.classList.remove("active");
   });
@@ -7,7 +6,6 @@ function changeContent(contentType) {
     section.classList.remove("active");
   });
 
-  // Add active class to clicked button and corresponding content
   const activeButton = document.querySelector(
     `[data-content="${contentType}"]`
   );
@@ -19,7 +17,6 @@ function changeContent(contentType) {
   }
 }
 
-// Load navbar
 fetch("../navbar/navbar.html")
   .then((response) => response.text())
   .then((data) => {

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,6 @@
     filter: brightness(0) invert(1);
 }
 
-/* Navbar Styling */
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,13 +21,11 @@ nav {
     padding: 15px 20px;
 }
 
-/* Brand Logo */
 nav img {
     height: 5vh;
     width: auto;
 }
 
-/* General Navbar Styles */
 nav * {
     color: white;
 }
@@ -41,14 +37,13 @@ nav a {
     border-radius: 25px;
 }
 
-nav > div {
+nav>div {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
 }
 
-/* Navigation Links */
 nav ul {
     display: flex;
     list-style: none;
@@ -63,12 +58,10 @@ nav li {
     cursor: pointer;
 }
 
-/* Hover Effects */
 nav li:hover {
     background-color: rgb(60, 80, 181);
 }
 
-/* Dropdown Menus */
 nav ul li ul {
     display: none;
     position: absolute;
@@ -82,7 +75,7 @@ nav ul li ul {
     z-index: 100;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
     display: flex;
     flex-direction: column;
 }
@@ -99,45 +92,44 @@ nav ul li ul li a {
     width: 100%;
 }
 
-nav ul li ul li:hover{
+nav ul li ul li:hover {
     background-color: rgb(30, 44, 95) !important;
 }
 
-nav svg{
+nav svg {
     height: 20px;
     color: white;
 }
 
-.credits{
+.credits {
     font-size: 14px;
     background: rgb(11, 20, 55);
     padding: 5px 15px;
     border-radius: 25px;
 }
 
-#creds{
+#creds {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#creds svg{
+#creds svg {
     height: 15px;
 }
 
-.credits-li:hover{
+.credits-li:hover {
     background-color: rgb(11, 20, 55);
 }
 
-.buy{
+.buy {
     background-color: rgb(255, 78, 96);
 }
 
-.buy:hover{
+.buy:hover {
     background-color: rgb(205, 59, 74) !important;
 }
 
-/* Header Actions */
 .header-actions {
     display: flex;
     align-items: center;
@@ -153,7 +145,6 @@ nav svg{
     background-color: rgb(69, 92, 206);
 }
 
-/* Notifications & User Dropdown */
 .dropdown {
     position: relative;
     cursor: pointer;
@@ -176,18 +167,16 @@ nav svg{
     display: block;
 }
 
-/* User Profile Image */
 .dropdown img {
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
 
-.log:hover{
+.log:hover {
     background-color: rgba(69, 92, 206, 0) !important;
 }
 
-/* Notifications Dropdown Improvements */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -196,7 +185,7 @@ nav svg{
     background: #0b1437;
     border: 1px solid #1f2b5a;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     min-width: 320px;
     padding: 12px 0;
     opacity: 0;
@@ -211,13 +200,13 @@ nav svg{
     transform: translateY(0);
 }
 
-.dropdown-menu > div {
+.dropdown-menu>div {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.dropdown-menu > div > div {
+.dropdown-menu>div>div {
     display: flex;
     align-items: flex-start;
     padding: 12px 16px;
@@ -226,7 +215,7 @@ nav svg{
     position: relative;
 }
 
-.dropdown-menu > div > div:hover {
+.dropdown-menu>div>div:hover {
     background: rgba(69, 92, 206, 0.15);
 }
 
@@ -255,119 +244,4 @@ nav svg{
     font-size: 12px;
     color: #6875b9;
     margin-top: 4px;
-}
-
-.dropdown-menu > a {
-    display: block;
-    text-align: center;
-    padding: 12px;
-    font-size: 13px;
-    color: #6681ff !important;
-    font-weight: 500;
-    border-top: 1px solid #1f2b5a;
-    transition: background 0.2s ease;
-}
-
-.dropdown-menu > a:hover {
-    background: rgba(69, 92, 206, 0.1);
-}
-
-/* User Profile Dropdown Improvements */
-.header-actions .dropdown-menu {
-    min-width: 240px;
-    padding: 16px;
-    right: -10px;
-}
-
-.header-actions .dropdown-menu > div {
-    text-align: center;
-}
-
-.header-actions .dropdown-menu img {
-    width: 80px;
-    height: 80px;
-    border: 3px solid #3b4a9e;
-    margin: 0 auto 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.header-actions .dropdown-menu span {
-    position: absolute;
-    bottom: -5px;
-    right: 50%;
-    transform: translateX(50%);
-    background: #4d67e7;
-    color: white;
-    font-size: 11px;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 20px;
-    border: 2px solid #0b1437;
-}
-
-.header-actions .dropdown-menu h6 {
-    font-size: 16px;
-    margin: 12px 0;
-    color: #fff;
-    font-weight: 600;
-}
-
-.header-actions .dropdown-menu a.log {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background: rgba(255, 78, 96, 0.1);
-    color: #ff4e60 !important;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.2s ease;
-}
-
-.header-actions .dropdown-menu a.log:hover {
-    background: rgba(255, 78, 96, 0.2);
-    transform: translateY(-1px);
-}
-
-/* Profile Image Hover Effect */
-.log img {
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.log:hover img {
-    border-color: #4d67e7;
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(77, 103, 231, 0.3);
-}
-
-/* Notification Bell Animation */
-@keyframes bell-ring {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(15deg); }
-    50% { transform: rotate(-15deg); }
-    75% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
-}
-
-.dropdown:hover svg[data-bs-toggle="dropdown"] {
-    animation: bell-ring 0.4s ease;
-}
-
-/* Unread Notification Indicator */
-.dropdown::after {
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    width: 8px;
-    height: 8px;
-    background: #ff4e60;
-    border-radius: 50%;
-    border: 2px solid #0b1437;
-    display: none;
-}
-
-.dropdown.has-notifications::after {
-    display: block;
 }

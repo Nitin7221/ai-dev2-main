@@ -133,21 +133,21 @@ button:hover::before {
     left: 150%;
 }
 
-.particles {
+.dots {
     position: fixed;
     width: 100vw;
     height: 100vh;
     pointer-events: none;
 }
 
-.particle {
+.dot {
     position: absolute;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    animation: particle-float 20s infinite linear;
+    animation: dot-float 20s infinite linear;
 }
 
-@keyframes particle-float {
+@keyframes dot-float {
     0% { transform: translateY(100vh) rotate(0deg); }
     100% { transform: translateY(-100vh) rotate(360deg); }
 }
