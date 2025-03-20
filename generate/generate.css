@@ -81,3 +81,15 @@
     left: 0;
     color: #718096;
 }
+
+/* Style the placeholder text */
+input::placeholder {
+    color: #718096; /* Example: a gray tone */
+    opacity: 1; /* Firefox */
+  }
+  
+  /* Additional focus style for the input */
+  input:focus::placeholder {
+    color: #a0aec0;
+  }
+  
